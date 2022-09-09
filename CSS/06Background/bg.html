@@ -10,7 +10,7 @@
         .background-attachment {
             border: 15px dotted;
             height: 500px;
-            background: url(../download.jfif);
+            background: url(../images/img1.jpeg);
             background-attachment: fixed;
             /* background-attachment: scroll; */
         }
@@ -24,12 +24,12 @@
         .background-image {
             border: 15px dotted;
             height: 500px;
-            background-image: url(../download.jfif);
+            background-image: url(../images/img1.jpeg);
         }
         .background-clip {
             border: 15px dotted;
             height: 500px;
-            background: url(../download.jfif);
+            background: url(../images/img1.jpeg);
             background-clip: border-box;
             background-clip: content-box;
             padding: 20px;
@@ -37,7 +37,7 @@
         .background-origin {
             border: 15px dotted;
             height: 500px;
-            background: url(../download.jfif);
+            background: url(../images/img1.jpeg);
             background-origin: border-box;
             background-origin: content-box;
             padding: 20px;
@@ -46,7 +46,7 @@
         .background-position {
             border: 15px dotted;
             height: 500px;
-            background: url(../download.jfif);
+            background: url(../images/img1.jpeg);
             background-attachment: fixed;
             background-position:20% 20% ;
         }
@@ -54,7 +54,7 @@
         .background-repeat {
             border: 15px dotted;
             height: 500px;
-            background: url(../download.jfif);
+            background: url(../images/img1.jpeg);
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
@@ -62,10 +62,18 @@
         .background-size {
             border: 15px dotted;
             height: 500px;
-            background: url(../download.jfif);
+            background: url(../images/img1.jpeg);
             background-attachment: fixed;
             background-size: cover;
             background-position:20% 20% ;
+        }
+        .background-shorthand {
+            border: 15px dotted;
+            height: 500px;
+            background: url(../images/img1.jpeg) no-repeat center center /cover;
+            /* background-attachment: fixed;
+            background-size: cover;
+            background-position:20% 20% ; */
         }
     </style>
 </head>
@@ -89,6 +97,7 @@
     <div class="background-position">background-position</div>
     <div class="background-repeat">background-repeat</div>
     <div class="background-size">background-size</div>
+    <div class="background-shorthand ">background-shorthand </div>
 </body>
 
 </html>
