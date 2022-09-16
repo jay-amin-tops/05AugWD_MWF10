@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid;
+        }
+
+        .disp-block {
+            display: block;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .disp-inline {
+            display: inline;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .disp-inline-block {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li> display: block;</li>
+        <li> display: inline;</li>
+        <li> display: inline-block;</li>
+        <li> display: flex;</li>
+        <li> display: grid;</li>
+    </ul>
+
+    <h2>Display Block</h2>
+    <div class="disp-block-wrapper">
+        Before Display Block
+        <div class="disp-block">Display Block</div>
+        <div class="disp-block">Display Block</div>
+        <div class="disp-block">Display Block</div>
+        After Display Block
+    </div>
+    <hr>
+    <h2>Display Inline</h2>
+    <div class="disp-inline-wrapper">
+        Before Display inline
+        <div class="disp-inline">Display Inline</div>
+        <div class="disp-inline">Display Inline</div>
+        <div class="disp-inline">Display Inline</div>
+        After Display inline
+
+    </div>
+    <hr>
+    <h2>Display Inline Block</h2>
+    <div class="disp-inline-block-wrapper">
+        Before Display inline-Block
+        <div class="disp-inline-block">Display Inline Block</div>
+        <div class="disp-inline-block">Display Inline Block</div>
+        <div class="disp-inline-block">Display Inline Block</div>
+        After Display inline-Block
+
+    </div>
+
+</body>
+
+</html>
