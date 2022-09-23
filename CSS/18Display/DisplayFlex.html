@@ -83,6 +83,18 @@
         .col{
             height: 50px;
         }
+        .gap div{
+            width: 40%;
+        }
+        .gap{
+            flex-wrap: wrap;
+            /* gap: 30px; */
+            row-gap: 10px;
+            column-gap: 50px;
+        }
+        .grow div{
+            flex-grow: 1; /* default 0 */
+        }
     </style>
 </head>
 
@@ -184,6 +196,28 @@
     </div>
     <h2>justify-content-space-ev</h2>
     <div class="disp-flex justify-content-space-evenly">
+        <div class="col">box 1</div>
+        <div class="col">box 2</div>
+        <div class="col">box 3</div>
+    </div>
+    <h2>gap</h2>
+    <div class="disp-flex gap">
+        <div class="col">box 1</div>
+        <div class="col">box 2</div>
+        <div class="col">box 3</div>
+        <div class="col">box 3</div>
+        <div class="col">box 3</div>
+    </div>
+    <h2>grow</h2>
+    <div class="disp-flex grow">
+        <div class="col">box 1</div>
+        <div class="col">box 2</div>
+        <div class="col">box 3</div>
+        <div class="col">box 4</div>
+        <div class="col">box 5</div>
+    </div>
+    <h2>grow</h2>
+    <div class="disp-flex grow">
         <div class="col">box 1</div>
         <div class="col">box 2</div>
         <div class="col">box 3</div>
