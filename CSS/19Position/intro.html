@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid;
+        }
+        .fixed{
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+        div[class*="box"]{
+            height: 500px;
+        }
+        div[class*="box-ab"]{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            /* top: 0; */
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+        }
+        .box1{ background-color: brown; }
+        .box2{ background-color: rgb(42, 124, 165); }
+        .box3{ background-color: rgb(42, 165, 63); }
+        .box4{ background-color: rgb(165, 151, 42); }
+        .box5{ position: relative; background-color: rgb(7, 88, 80); display: flex; width: 80%; margin: 0 auto; }
+        .box-ab-1{ top:50px ; left:50px ; z-index: 100;background-color:teal ; }
+        .box-ab-2{ top:80px ; left:80px ; z-index: 10; background-color: brown; }
+        .box-ab-3{ top:150px ; left:150px ; z-index: 1; background-color: palegreen; }
+        .box-ab-4{ top:130px ; left:130px ;z-index: 100; background-color: orangered; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> position: static;</li>
+        <li> position: fixed;</li>
+        <li> position: sticky;</li>
+        <li> position: relative;</li>
+        <li> position: absolute;</li>
+    </ul>
+    <div class="fixed">fixed content</div>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">
+        box3
+        <div class="sticky">sticky content</div>
+
+    </div>
+    <div class="box4">box4</div>
+    <div class="box5">
+        <div class="box-ab-1"></div>
+        <div class="box-ab-2"></div>
+        <div class="box-ab-3"></div>
+        <div class="box-ab-4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"FrederickatheGreat" ;
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+a{
+    text-decoration: none;
+}
+.bg{
+    background-color: #ffe001;
+    height: 100vh;
+    font-family: "FrederickatheGreat";
+}
+.clippath{
+    background-color: #ebe9ac;
+    height: 100vh;
+    clip-path: polygon(58% 0, 100% 0, 100% 100%, 50% 100%);
+}

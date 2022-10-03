@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header-top-fix{
+            line-height: 50px;
+            background-color: #2874f0;
+        }
+        .header-container{
+            width: 1030px;
+            margin: 0 auto;
+        }
+        .row{
+            display: flex;
+        }
+        .ml-a{
+            margin-left: auto;
+        }
+        .search input{
+            width: 450px;
+            padding: 10px 15px;
+        }
+        .logo{
+            padding-top: 7px;
+            width: 75px;
+            line-height: 10px;
+        }
+        .logo img{
+            width: 100%;
+        }
+        .logo span{
+            font-size: 12px;
+        }
+        .become-seller-menu>ul>li{
+            display: inline-block;
+        } 
+        .child{
+            display: none;
+            position: absolute;
+        }
+        .hoverme:hover .child{
+            display: block;
+        }
+        .cust-search{
+            position: absolute;
+            /* left: 200px; */
+            right: 50px;
+            top: 15px;
+        }
+        .posi-rele{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top-fix">
+            <div class="header-container">
+                <div class="row">
+                    <div class="logo">
+                        <img src="images/flipkart-plus_8d85f4.png" alt="">
+                        <span>Explore Plus</span>
+                        
+                    </div>
+                    <div class="search posi-rele"><i class="fa-solid fa-magnifying-glass cust-search"></i><input type="text" name="" id=""> <button type="submit">Login</button> </div>
+                    <div class="become-seller-menu">
+                        <ul>
+                            <li><a href="#">become a seller</a></li>
+                            <li><a class="hoverme" href="#">
+                                More
+                                <ul class="child">
+                                    <li>soemthing</li>
+                                </ul>
+                            </a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="cart ml-a">cart</div>
+                </div>
+            </div>
+        </div>
+        <div class="header-sub"></div>
+    </header>
+</body>
+</html>
