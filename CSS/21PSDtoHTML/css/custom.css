@@ -1,22 +1,221 @@
-*{
+@font-face {
+    font-family: "FrederickatheGreat";
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Gabelisa";
+    src: url(../fonts/GabelisaFontbyKeithzo.otf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
+    /* border: 1px solid; */
 }
-@font-face {
-    font-family:"FrederickatheGreat" ;
-    src: url(../fonts/FrederickatheGreat-Regular.ttf);
-}
-a{
+
+a {
     text-decoration: none;
 }
-.bg{
+
+img {
+    width: 100%;
+}
+.card-image{
+    height: 300px;
+}
+.card-image img{
+    height: inherit;
+    object-fit: contain;
+}
+.bg-strip{
+    position: absolute;
     background-color: #ffe001;
-    height: 100vh;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+.bg {
+    background-color: #ffe001;
+    /* height: 100vh; */
+    height: 875px;
+    font-family: "FrederickatheGreat";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.clippath {
+    background-color: #ebe9ac;
+    /* height: 100vh; */
+    height: 875px;
+    clip-path: polygon(78% 0, 127% 0, 100% 100%, 65% 100%);
+}
+
+.container {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+.col-33{
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.align-center {
+    align-items: center;
+}
+
+.ml-a {
+    margin-left: auto;
+}
+.my{
+   margin-top: .5em; 
+   margin-bottom: .5em; 
+}
+.py{
+   margin-top: .5em; 
+   margin-bottom: .5em; 
+}
+.posi-rele {
+    position: relative;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+
+.r-side-contact {
+    width: 200px;
+    /* line-height: 21px; */
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Montserrat";
+    text-align: right;
+    font-size: 22px;
+}
+
+.express-span {
+    display: inline-block;
+    /* font-weight: 300; */
+    width: 200px;
+    font-size: 12px;
+}
+
+/* .navbar{
+    display: flex;
+} */
+.navbar li {
+    display: inline-block;
+    /* padding: 30px; */
+}
+
+.navbar li:hover {
+    background-color: white;
+}
+
+.navbar li a {
+    display: inline-block;
+    padding: 30px;
+    letter-spacing: 3px;
+    color: #000000;
+    font-weight: 900;
+}
+
+.r-u-hngry {
+    width: 560px;
+    text-align: center;
+}
+
+.r-u-hngry img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.r-u-hngry span {
+    font-size: 58px;
+    font-family: "Gabelisa";
+}
+
+.r-u-hngry p {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.r-u-hngry h3 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 400;
     font-family: "FrederickatheGreat";
 }
-.clippath{
-    background-color: #ebe9ac;
-    height: 100vh;
-    clip-path: polygon(58% 0, 100% 0, 100% 100%, 50% 100%);
+
+.header-img-sec {
+    width: 700px;
+}
+.tomato{
+    bottom: 100px;
+    right: -50px;
+}
+.pasta{
+    right: -130px;
+}
+.leaf-r{
+    bottom: 50px;
+    right: -120%;
+}
+.spaghetti{
+    bottom: -250px;
+    left: -380px;
+    width: auto !important;
+    height: auto !important;
+}
+.fredericka-font {
+    font-family: "FrederickatheGreat" !important;
+}
+
+.calculate {
+    font-size: 57px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.ma {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.w-150 {
+    width: 150px;
+}
+
+.happy-hrs {
+    font-size: 19px !important;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.btn{
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid;
+    color: #000000;
 }
