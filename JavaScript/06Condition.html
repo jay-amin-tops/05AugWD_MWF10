@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" onkeydown="getResult(this)" name="marks" id="marks"> -->
+    <!-- <input type="text" onkeypress="getResult(this)" name="marks" id="marks"> -->
+    <input type="text" onkeyup="getResult(this)" name="marks" id="marks">
+<!-- </input type="text" name="marks" id="marks"> -->
+    <div id="result"></div>
+    <script>
+        function getResult(e) {
+            console.log(e.value);
+            // var marks = 65;
+            var marks = e.value;
+            // if (marks > 50) {
+            //    document.getElementById("result").innerHTML = "Pass" 
+            // }
+            // if (marks >= 50) {
+            //    document.getElementById("result").innerHTML = "Pass" 
+            // }
+    
+            // if (marks >= 50) {
+            //     // true blog
+            //     document.getElementById("result").innerHTML = "Pass" 
+            // }else{
+            //     // fasle blog
+            //     document.getElementById("result").innerHTML = "Try again" 
+            // }
+            if (marks >= 50  && marks < 60)  {
+                document.getElementById("result").innerHTML = "Pass Class" 
+            }else if (marks >= 60  && marks < 70)  {
+                document.getElementById("result").innerHTML = "Second Class" 
+            }else if (marks >= 70  && marks < 80)  {
+                document.getElementById("result").innerHTML = "First Class" 
+            }else if (marks >= 80  && marks < 90)  {
+                document.getElementById("result").innerHTML = "Dist+ Class" 
+            }else if (marks >= 90  && marks <= 100)  {
+                document.getElementById("result").innerHTML = "Dist++ Class" 
+            }else{
+                document.getElementById("result").innerHTML = "Try again" 
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

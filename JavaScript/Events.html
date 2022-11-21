@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <div id="bottomnextup">
+                        <a class="next" href="javascript-addeventlistener">next →</a>
+                        <a class="next" href="javascript-deleting-cookies">← prev</a>
+                    </div>
+                    <h1 class="h1">JavaScript Events</h1>
+                    <p>The change in the state of an object is known as an <strong>Event</strong>. In html, there are
+                        various events which represents that some activity is performed by the user or by the browser.
+                        When <a href="https://www.javatpoint.com/javascript-tutorial">javascript</a> code is included in
+                        <a href="https://www.javatpoint.com/html-tutorial">HTML</a>, js react over these events and
+                        allow the execution. This process of reacting over the events is called <strong>Event
+                            Handling</strong>. Thus, js handles the HTML events via <strong>Event Handlers</strong>.</p>
+                    <p><strong>For example</strong>, when a user clicks over the browser, add js code, which will
+                        execute the task to be performed on the event.</p>
+                    <p>Some of the HTML events and their event handlers are:</p>
+                    <h2 class="h3">Mouse events:</h2>
+                    <table class="alt">
+                        <tbody>
+                            <tr>
+                                <th>Event Performed</th>
+                                <th>Event Handler</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>click</td>
+                                <td>onclick</td>
+                                <td>When mouse click on an element</td>
+                            </tr>
+                            <tr>
+                                <td>mouseover</td>
+                                <td>onmouseover</td>
+                                <td>When the cursor of the mouse comes over the element</td>
+                            </tr>
+                            <tr>
+                                <td>mouseout</td>
+                                <td>onmouseout</td>
+                                <td>When the cursor of the mouse leaves an element</td>
+                            </tr>
+                            <tr>
+                                <td>mousedown</td>
+                                <td>onmousedown</td>
+                                <td>When the mouse button is pressed over the element</td>
+                            </tr>
+                            <tr>
+                                <td>mouseup</td>
+                                <td>onmouseup</td>
+                                <td>When the mouse button is released over the element</td>
+                            </tr>
+                            <tr>
+                                <td>mousemove</td>
+                                <td>onmousemove</td>
+                                <td>When the mouse movement takes place.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">Keyboard events:</h2>
+                    <table class="alt">
+                        <tbody>
+                            <tr>
+                                <th>Event Performed</th>
+                                <th>Event Handler</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>Keydown &amp; Keyup</td>
+                                <td>onkeydown &amp; onkeyup</td>
+                                <td>When the user press and then release the key</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">Form events:</h2>
+                    <table class="alt">
+                        <tbody>
+                            <tr>
+                                <th>Event Performed</th>
+                                <th>Event Handler</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>focus</td>
+                                <td>onfocus</td>
+                                <td>When the user focuses on an element</td>
+                            </tr>
+                            <tr>
+                                <td>submit</td>
+                                <td>onsubmit</td>
+                                <td>When the user submits the form</td>
+                            </tr>
+                            <tr>
+                                <td>blur</td>
+                                <td>onblur</td>
+                                <td>When the focus is away from a form element</td>
+                            </tr>
+                            <tr>
+                                <td>change</td>
+                                <td>onchange</td>
+                                <td>When the user modifies or changes the value of a form element</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="h3">Window/Document events</h2>
+                    <table class="alt">
+                        <tbody>
+                            <tr>
+                                <th>Event Performed</th>
+                                <th>Event Handler</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>load</td>
+                                <td>onload</td>
+                                <td>When the browser finishes the loading of the page</td>
+                            </tr>
+                            <tr>
+                                <td>unload</td>
+                                <td>onunload</td>
+                                <td>When the visitor leaves the current webpage, the browser unloads it</td>
+                            </tr>
+                            <tr>
+                                <td>resize</td>
+                                <td>onresize</td>
+                                <td>When the visitor resizes the window of the browser</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   
+                    <h2 class="h3">Click Event</h2>
+                    <div class="codeblock">
+                        <div class="dp-highlighter">
+                            <div class="bar">
+                                <div class="tools"><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a
+                                        href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div>
+                            </div>
+                            <ol start="1" class="dp-xml">
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;Javascript&nbsp;Events&nbsp;</span><span
+                                            class="tag">&lt;/</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span
+                                            class="tag-name">script</span><span>&nbsp;</span><span
+                                            class="attribute">language</span><span>=</span><span
+                                            class="attribute-value">"Javascript"</span><span>&nbsp;</span><span
+                                            class="attribute">type</span><span>=</span><span
+                                            class="attribute-value">"text/Javascript"</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;</span></li>
+                                <li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;clickevent()&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
+                                <li class="">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("This&nbsp;is&nbsp;JavaTpoint");&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+                                <li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;//--<span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">script</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span class="tag-name">form</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">input</span><span>&nbsp;</span><span
+                                            class="attribute">type</span><span>=</span><span
+                                            class="attribute-value">"button"</span><span>&nbsp;</span><span
+                                            class="attribute">onclick</span><span>=</span><span
+                                            class="attribute-value">"clickevent()"</span><span>&nbsp;</span><span
+                                            class="attribute">value</span><span>=</span><span
+                                            class="attribute-value">"Who's&nbsp;this?"</span><span
+                                            class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;/</span><span class="tag-name">form</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;/</span><span class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                            </ol>
+                        </div><textarea name="code" class="xml" style="display: none;">&lt;html&gt;
+        &lt;head&gt; Javascript Events &lt;/head&gt;
+        &lt;body&gt;
+        &lt;script language="Javascript" type="text/Javascript"&gt;
+            &lt;!--
+            function clickevent()
+            {
+                document.write("This is JavaTpoint");
+            }
+            //--&gt;
+        &lt;/script&gt;
+        &lt;form&gt;
+        &lt;input type="button" onclick="clickevent()" value="Who's this?"/&gt;
+        &lt;/form&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </textarea>
+                    </div>
+                    <span class="testit"><a
+                            href="https://www.javatpoint.com/oprweb/test.jsp?filename=JavaScriptClickEvent"
+                            target="_blank">Test it Now</a></span>
+                    <h2 class="h3">MouseOver Event</h2>
+                    <div class="codeblock">
+                        <div class="dp-highlighter">
+                            <div class="bar">
+                                <div class="tools"><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a
+                                        href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div>
+                            </div>
+                            <ol start="1" class="dp-xml">
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span class="tag-name">h1</span><span
+                                            class="tag">&gt;</span><span>&nbsp;Javascript&nbsp;Events&nbsp;</span><span
+                                            class="tag">&lt;/</span><span class="tag-name">h1</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;/</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span
+                                            class="tag-name">script</span><span>&nbsp;</span><span
+                                            class="attribute">language</span><span>=</span><span
+                                            class="attribute-value">"Javascript"</span><span>&nbsp;</span><span
+                                            class="attribute">type</span><span>=</span><span
+                                            class="attribute-value">"text/Javascript"</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;</span></li>
+                                <li class="">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;mouseoverevent()&nbsp;&nbsp;</span></li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
+                                <li class="">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("This&nbsp;is&nbsp;JavaTpoint");&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+                                <li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;//--<span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">script</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span
+                                            class="tag-name">p</span><span>&nbsp;</span><span
+                                            class="attribute">onmouseover</span><span>=</span><span
+                                            class="attribute-value">"mouseoverevent()"</span><span
+                                            class="tag">&gt;</span><span>&nbsp;Keep&nbsp;cursor&nbsp;over&nbsp;me</span><span
+                                            class="tag">&lt;/</span><span class="tag-name">p</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;/</span><span class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                            </ol>
+                        </div><textarea name="code" class="xml" style="display: none;">&lt;html&gt;
+        &lt;head&gt; 
+        &lt;h1&gt; Javascript Events &lt;/h1&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;script language="Javascript" type="text/Javascript"&gt;
+            &lt;!--
+            function mouseoverevent()
+            {
+                alert("This is JavaTpoint");
+            }
+            //--&gt;
+        &lt;/script&gt;
+        &lt;p onmouseover="mouseoverevent()"&gt; Keep cursor over me&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </textarea>
+                    </div>
+                    <span class="testit"><a
+                            href="https://www.javatpoint.com/oprweb/test.jsp?filename=JavaScriptMouseOverEvent"
+                            target="_blank">Test it Now</a></span>
+                    <h2 class="h3">Focus Event</h2>
+                    <div class="codeblock">
+                        <div class="dp-highlighter">
+                            <div class="bar">
+                                <div class="tools"><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a
+                                        href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div>
+                            </div>
+                            <ol start="1" class="dp-xml">
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;Javascript&nbsp;Events</span><span
+                                            class="tag">&lt;/</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span class="tag-name">h2</span><span
+                                            class="tag">&gt;</span><span>&nbsp;Enter&nbsp;something&nbsp;here</span><span
+                                            class="tag">&lt;/</span><span class="tag-name">h2</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">input</span><span>&nbsp;</span><span
+                                            class="attribute">type</span><span>=</span><span
+                                            class="attribute-value">"text"</span><span>&nbsp;</span><span
+                                            class="attribute">id</span><span>=</span><span
+                                            class="attribute-value">"input1"</span><span>&nbsp;</span><span
+                                            class="attribute">onfocus</span><span>=</span><span
+                                            class="attribute-value">"focusevent()"</span><span
+                                            class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span
+                                            class="tag-name">script</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span>&lt;!--&nbsp;&nbsp;</span></li>
+                                <li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;focusevent()&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
+                                <li class="">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("input1")<span
+                                            class="attribute">.style.background</span><span>=</span><span
+                                            class="attribute-value">"&nbsp;aqua"</span><span>;&nbsp;&nbsp;</span></span>
+                                </li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+                                <li class=""><span>//--<span class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span>
+                                </li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">script</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;/</span><span class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                            </ol>
+                        </div><textarea name="code" class="xml" style="display: none;">&lt;html&gt;
+        &lt;head&gt; Javascript Events&lt;/head&gt;
+        &lt;body&gt;
+        &lt;h2&gt; Enter something here&lt;/h2&gt;
+        &lt;input type="text" id="input1" onfocus="focusevent()"/&gt;
+        &lt;script&gt;
+        &lt;!--
+            function focusevent()
+            {
+                document.getElementById("input1").style.background=" aqua";
+            }
+        //--&gt;
+        &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </textarea>
+                    </div>
+                    <span class="testit"><a
+                            href="https://www.javatpoint.com/oprweb/test.jsp?filename=JavaScriptFocusEvent"
+                            target="_blank">Test it Now</a></span>
+                    <h2 class="h3">Keydown Event</h2>
+                    <div class="codeblock">
+                        <div class="dp-highlighter">
+                            <div class="bar">
+                                <div class="tools"><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a
+                                        href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div>
+                            </div>
+                            <ol start="1" class="dp-xml">
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;Javascript&nbsp;Events</span><span
+                                            class="tag">&lt;/</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span class="tag-name">h2</span><span
+                                            class="tag">&gt;</span><span>&nbsp;Enter&nbsp;something&nbsp;here</span><span
+                                            class="tag">&lt;/</span><span class="tag-name">h2</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">input</span><span>&nbsp;</span><span
+                                            class="attribute">type</span><span>=</span><span
+                                            class="attribute-value">"text"</span><span>&nbsp;</span><span
+                                            class="attribute">id</span><span>=</span><span
+                                            class="attribute-value">"input1"</span><span>&nbsp;</span><span
+                                            class="attribute">onkeydown</span><span>=</span><span
+                                            class="attribute-value">"keydownevent()"</span><span
+                                            class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span
+                                            class="tag-name">script</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span>&lt;!--&nbsp;&nbsp;</span></li>
+                                <li class="">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;keydownevent()&nbsp;&nbsp;</span></li>
+                                <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
+                                <li class="">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("input1");&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="alt">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Pressed&nbsp;a&nbsp;key");&nbsp;&nbsp;</span>
+                                </li>
+                                <li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+                                <li class="alt"><span>//--<span class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span>
+                                </li>
+                                <li class=""><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">script</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;/</span><span class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                            </ol>
+                        </div><textarea name="code" class="xml" style="display: none;">&lt;html&gt;
+        &lt;head&gt; Javascript Events&lt;/head&gt;
+        &lt;body&gt;
+        &lt;h2&gt; Enter something here&lt;/h2&gt;
+        &lt;input type="text" id="input1" onkeydown="keydownevent()"/&gt;
+        &lt;script&gt;
+        &lt;!--
+            function keydownevent()
+            {
+                document.getElementById("input1");
+                alert("Pressed a key");
+            }
+        //--&gt;
+        &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </textarea>
+                    </div>
+                    <span class="testit"><a
+                            href="https://www.javatpoint.com/oprweb/test.jsp?filename=JavaScriptKeydownEvent"
+                            target="_blank">Test it Now</a></span>
+                    <h2 class="h3">Load event</h2>
+                    <div class="codeblock">
+                        <div class="dp-highlighter">
+                            <div class="bar">
+                                <div class="tools"><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#"
+                                        onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a
+                                        href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div>
+                            </div>
+                            <ol start="1" class="dp-xml">
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>Javascript&nbsp;Events</span><span
+                                            class="tag">&lt;/</span><span class="tag-name">head</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">br</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;</span><span
+                                            class="tag-name">body</span><span>&nbsp;</span><span
+                                            class="attribute">onload</span><span>=</span><span
+                                            class="attribute-value">"window.alert('Page&nbsp;successfully&nbsp;loaded');"</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;</span><span
+                                            class="tag-name">script</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span>&lt;!--&nbsp;&nbsp;</span></li>
+                                <li class="alt">
+                                    <span>document.write("The&nbsp;page&nbsp;is&nbsp;loaded&nbsp;successfully");&nbsp;&nbsp;</span>
+                                </li>
+                                <li class=""><span>//--<span class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span>
+                                </li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">script</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class=""><span><span class="tag">&lt;/</span><span class="tag-name">body</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                                <li class="alt"><span><span class="tag">&lt;/</span><span
+                                            class="tag-name">html</span><span
+                                            class="tag">&gt;</span><span>&nbsp;&nbsp;</span></span></li>
+                            </ol>
+                        </div><textarea name="code" class="xml" style="display: none;">&lt;html&gt;
+        &lt;head&gt;Javascript Events&lt;/head&gt;
+        &lt;/br&gt;
+        &lt;body onload="window.alert('Page successfully loaded');"&gt;
+        &lt;script&gt;
+        &lt;!--
+        document.write("The page is loaded successfully");
+        //--&gt;
+        &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </textarea>
+                    </div>
+                    <span class="testit"><a
+                            href="https://www.javatpoint.com/oprweb/test.jsp?filename=JavaScriptLoadEvent"
+                            target="_blank">Test it Now</a></span>
+                    <hr>
+                  
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

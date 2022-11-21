@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation:cust-anim 5s; */
+        /* animation: 3s ease-in 1s infinite reverse both running slidein; */
+        /* animation: 3s linear infinite slidein; */
+        height: 200px;
+        width: 200px;
+        background-color: blueviolet;
+        border: 1px solid grey;
+        animation: 2s linear infinite slidein;
+        position: relative;
+    }
+    @keyframes slidein{
+        to{ border-radius:0%;top: 20px; }
+        from{ border-radius:50%; top: 200px;} 
+    }
+    /* @keyframes slidein{
+        10%{ border-radius: 5%;  top: 20px;background-color:grey ;}
+        20%{ border-radius: 10%;  top: 40px; background-color:orangered ;}
+        30%{ border-radius: 20%;   top: 60px;background-color:purple ;}
+        40%{ border-radius: 30%;   top: 100px;background-color:teal ;}
+        60%{ border-radius: 40%;   top: 80px;background-color: green;}
+        80%{ border-radius: 50%;  top: 60px; background-color: peru;}
+        100%{ border-radius: 50%;  top: 20px;background-color: tomato; }
+    } */
+</style>
+</head>
+<body>
+    
+
+    <div class="box"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam neque culpa consequuntur dolorum mollitia nesciunt veritatis a. Aperiam modi earum explicabo in expedita reprehenderit tempore quo, quaerat sunt numquam.</p>
+    <h2>Animation</h2>
+    <p>The animation shorthand CSS property applies an animation between styles. It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state.</p>
+</body>
+</html>
