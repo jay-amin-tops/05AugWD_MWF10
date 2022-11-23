@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onblur="validate()" name="username" id="username"><span id="usernameError"></span> <br>
+    <input type="text" name="password" id="password"><br>
+    <input type="text" name="email" id="email"><br>
+    <script>
+        function validate() {
+            var username = document.getElementById("username").value
+            //  console.log(username);
+            if (username == "") {
+                document.getElementById("usernameError").innerText = "This field is required"
+            }else{
+                document.getElementById("usernameError").innerText = ""
+            }
+        }
+    </script>
+</body>
+</html>
