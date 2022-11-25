@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <input type="text" onblur="validate()" name="username" id="username"><span id="usernameError"></span> <br>
-    <input type="text" name="password" id="password"><br>
-    <input type="text" name="email" id="email"><br>
+    <input type="text" onblur="validate(this,'usernameError')" name="username" id="username"><span
+        id="usernameError"></span> <br>
+    <input type="text" onblur="validate(this,'passwordError')" name="password" id="password"><span
+        id="passwordError"></span> <br>
+    <!-- <input type="text" onkeypress="checkemail(this,'emailError')" onblur="validate(this,'emailError')" name="email" id="email"><span id="emailError"></span> <br> -->
+    <!-- <input type="text" onkeydown="checkemail(this,'emailError')" onblur="validate(this,'emailError')" name="email" id="email"><span id="emailError"></span> <br> -->
+    <input type="text" onkeyup="checkemail(this,'emailError')" onblur="validate(this,'emailError')" name="email"
+        id="email"><span id="emailError"></span> <br>
+    <!-- <input type="tel" onkeypress="console.log(event.keyCode)" onblur="validate(this,'telError')" name="email"id="tel"><span id="telError"></span> <br> -->
+    <input type="tel" onkeypress="return (event.which >=48 && event.which <=57 )" minlength="10" maxlength="10" onblur="validate(this,'telError')" name="email"id="tel"><span id="telError"></span> <br>
     <script>
-        function validate() {
-            var username = document.getElementById("username").value
+        function checkemail(e, spnid) {
+
+            console.log(e.type);
+            console.log(e.name);
+            if (e.name == "username") {
+                if (e.value == '') {
+                    document.getElementById("usernameError").innerText = "This field is reuqired"
+                } else {
+                    document.getElementById("usernameError").innerText = ""
+                }
+            }else if(e.name == "mobile") {
+                if (e.value == '') {
+                    document.getElementById("mobileError").innerText = "This field is reuqired"
+                } else {
+                    document.getElementById("mobileError").innerText = ""
+                }
+            }
+            // let regEx = /^+$/; //pattern 
+            // let regEx = /^[A-Z]+/; //only cap
+            // let regEx = /^[0-9]+/; //only cap
+            // let regEx = /^[a-z]+/; //only small
+            // let regEx = /^[a-zA-Z]+/; //only small
+            // let regEx = /^[a-zA-Z]+/; // alpha only 
+            let regEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z]{2,4})+$/; // alpha only 
+            // var re = /\S+@\S+\.\S+/;
+            // console.log(re.test(e.value)); 
+            console.log(regEx.test(e.value));
+        }
+        function validate(anything, spnkaipan) {
+            // console.log(anything.value);
+            // var username = document.getElementById("username").value
             //  console.log(username);
-            if (username == "") {
-                document.getElementById("usernameError").innerText = "This field is required"
-            }else{
-                document.getElementById("usernameError").innerText = ""
+            if (anything.value == "") {
+                document.getElementById(spnkaipan).innerText = "This field is required"
+            } else {
+                document.getElementById(spnkaipan).innerText = ""
             }
         }
     </script>
 </body>
+
 </html>
