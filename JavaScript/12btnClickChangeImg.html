@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="bulboff.jpg" width="100px" id="slider-img" alt="">
+    <button id="changeclr">Turn On Bulb</button>
+    <button id="turnoffbulb">Turn Off Bulb</button>
+    <script>
+        let ImageData = document.getElementById('slider-img');
+        document.getElementById("changeclr").addEventListener("click", function () {
+            ImageData.src="bulbon.jpg"
+            ImageData.style.width="100px"
+        })
+        document.getElementById("turnoffbulb").addEventListener("click", function () {
+            ImageData.src="bulboff.jpg"
+            ImageData.style.width="100px"
+        })
+
+    </script>
+</body>
+
+</html>
