@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" id="my-form">
+        <input type="text" name="username" id="username" required><br>
+        <input type="text" name="password" id="password" required><br>
+        <input type="text" name="email" id="email"><br>
+        <input type="tel" onkeypress="return (event.which >=48 && event.which <=57 )" minlength="10" maxlength="10"
+            name="email" id="tel"><span id="telError"></span> <br>
+        <input type="submit" onclick="checkvalidation()" name="save" id="save">
+    </form>
+    <script>
+        function checkvalidation() {
+            event.preventDefault();
+            let FormRequiredInpField = document.getElementById("my-form").querySelectorAll("[required]")
+            for (let index = 0; index < FormRequiredInpField.length; index++) {
+                var h = document.createElement("span");
+                var t = document.createTextNode("This field is required");
+                h.appendChild(t);
+                if (FormRequiredInpField[index].value == "") {
+                    if (FormRequiredInpField[index].nextElementSibling.nodeName == "SPAN") {
+                        FormRequiredInpField[index].nextElementSibling.remove()
+                    } 
+                    FormRequiredInpField[index].after(h);
+                }else{
+                    if (FormRequiredInpField[index].nextElementSibling.nodeName == 'SPAN') {
+                        FormRequiredInpField[index].nextElementSibling.remove()
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
