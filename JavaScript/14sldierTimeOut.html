@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../CSS/images/img1.jpeg" class="slider-img" alt="">
+    <img src="../CSS/images/img10.jpeg" class="slider-img" alt="">
+    <img src="../CSS/images/img12.jpeg" class="slider-img" alt="">
+    <img src="../CSS/images/img18.jpeg" class="slider-img" alt="">
+    <img src="../CSS/images/img17.jpeg" class="slider-img" alt="">
+    <button id="next-btn" onclick="next(this)">next</button>
+<script>
+    let ImageData = document.getElementsByClassName('slider-img');
+    // console.log(ImageData);
+    let count = 0;
+    function next() {
+        let currentCount =document.getElementById('next-btn').getAttribute("data-id");
+        letNextImg = parseInt(currentCount)+1;
+        for (let index = 0; index < ImageData.length; index++) {
+            // console.log(index);
+            ImageData[index].style.display="none"            
+            // document.getElementsByClassName('slider-img')[index].style.display="none"            
+        }
+        ImageData[letNextImg].style.display="block"
+        document.getElementById('next-btn').setAttribute("data-id", letNextImg);
+
+    }
+    function Slider() {
+        // console.log(ImageData);
+        for (let index = 0; index < ImageData.length; index++) {
+            // console.log(index);
+            ImageData[index].style.display="none"            
+            // document.getElementsByClassName('slider-img')[index].style.display="none"            
+        }
+        if (count >= ImageData.length ) {
+            count = 0
+        }
+        ImageData[count].style.display="block"
+        ImageData[count].setAttribute("data-id", count);
+        document.getElementById('next-btn').setAttribute("data-id", count);
+
+        console.log("Count : ",count);
+        count++;    
+        // console.log(count);        
+        // ImageData[0].style.display="none"            
+        // ImageData[1].style.display="none"            
+        setTimeout(Slider, 5000)
+        // Slider()
+    }
+    Slider()
+    // setInterval(Slider, 1000);
+    
+</script>
+</body>
+</html>
