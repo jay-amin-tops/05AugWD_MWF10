@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ONLINE CDN START -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> -->
+    <!-- ONLINE CDN END -->
+
+    <!-- OFFLINE START -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- OFFLINE  END -->
+</head>
+
+<body>
+    <input type="text" name="inp" id="inp">
+    <!-- <button onclick="getdata()" id="btn"> click</button> -->
+    <button id="btn"> click</button>
+    <script>
+        // function getdata() {
+        //     // let inpdata = document.getElementById("inp").value;
+        //     // console.log(inpdata);
+        //     let inpdata = $("#inp").val(); //$ is not defined if jquery is not loaded
+        //     console.log(inpdata);
+        // }
+        // document.getElementById("btn").addEventListener("click",function (params) {
+        //         let inpdata = document.getElementById("inp").value;
+        //         console.log(inpdata);
+        // })
+        $('#btn').click(function () {
+            console.log("Called");
+        })
+    </script>
+</body>
+
+</html>

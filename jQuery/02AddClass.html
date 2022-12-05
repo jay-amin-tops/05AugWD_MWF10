@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            background-color: teal;
+            color: white;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cupiditate alias adipisci eveniet rem quia
+        inventore voluptatibus vero assumenda quo ullam, distinctio nihil nesciunt blanditiis temporibus ratione modi.
+        Tenetur, nihil.</p>
+    <button id="btn">Click</button>
+    <button id="btn-remove">Click Remove Class</button>
+    <button id="btn-toggle">Toggle Class</button>
+    <br>
+    <button id="btn-js">Click JavaScript</button>
+    <script>
+        document.getElementById("btn-js").addEventListener("click", function (params) {
+            document.getElementById("para").classList.add("active") 
+        })
+        $("#btn").click(function () {
+            $("#para").addClass("active") 
+        })
+        $("#btn-remove").click(function () {
+            $("#para").removeClass("active") 
+        })
+        $("#btn-toggle").click(function () {
+            console.log($("#para").hasClass("active"));
+            
+            $("#para").toggleClass("active") 
+        })
+    </script>
+</body>
+
+</html>

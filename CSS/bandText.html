@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #simple_arc {
+            display: block;
+            width: 306px;
+            height: 305px;
+        }
+
+        #simple_arc>span[class^=w]:nth-of-type(n+0) {
+            display: block;
+            position: absolute;
+            -moz-transform-origin: 50% 100%;
+            -webkit-transform-origin: 50% 100%;
+            -o-transform-origin: 50% 100%;
+            -ms-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+        }
+
+        #simple_arc span {
+            font-family: 'Viga';
+            font-size: 38px;
+            font-weight: regular;
+            font-style: normal;
+            line-height: 0.65;
+            white-space: pre;
+            overflow: visible;
+            padding: 0px;
+        }
+
+        #simple_arc .w0 {
+            -moz-transform: rotate(-1.14rad);
+            -webkit-transform: rotate(-1.14rad);
+            -o-transform: rotate(-1.14rad);
+            -ms-transform: rotate(-1.14rad);
+            transform: rotate(-1.14rad);
+            width: 21px;
+            height: 24px;
+            left: 42.7px;
+            top: 93.95px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="simple_arc">
+        <span class='w0'>S</span>
+        <span class='w1'>I</span>
+        <span class='w2'>M</span>
+        <span class='w3'>P</span>
+        <span class='w4'>L</span>
+        <span class='w5'>E</span>
+        <span class='w6'> </span>
+        <span class='w7'>A</span>
+        <span class='w8'>R</span>
+        <span class='w9'>C</span>
+    </div>
+</body>
+
+</html>
