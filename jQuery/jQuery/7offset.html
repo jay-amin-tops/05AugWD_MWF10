@@ -38,7 +38,10 @@
   </p>
   <div class="abs">
   </div>
-
+  <div>
+    <a href="page.html">link</a>
+  </div>
+  <button>Click</button>
   <script>
     username = "TOPS"
     console.log(username+"SG");
@@ -47,6 +50,7 @@
       console.log(offset);
       // return false;
       event.stopPropagation();
+      event.preventDefault();
       $("#result").text(this.tagName + " coords ( " + offset.left + ", " + offset.top + " )");
     }
     );
