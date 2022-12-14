@@ -52,6 +52,7 @@ appendClass();
  
 $( "button" ).on( "click", function() {
   var tc = this.className || undefined;
+  console.log(tc);
   divs.toggleClass( tc );
   appendClass();
 });

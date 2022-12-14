@@ -15,14 +15,8 @@
   var inputTitle = $( "input" ).attr( "title" );
   $( "button" ).click(function() {
     var input = $( this ).next();
+    input.removeAttr( "title" )
  
-    if ( input.attr( "title" ) === inputTitle ) {
-      input.removeAttr( "title" )
-    } else {
-      input.attr( "title", inputTitle );
-    }
- 
-    $( "#log" ).html( "input title is now " + input.attr( "title" ) );
   });
 })();
 </script>
