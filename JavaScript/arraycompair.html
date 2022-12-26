@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function compareArrays(arr1, arr2) {
+            if (arr1.length != arr2.length) return false;
+            for (var i = 0; i < arr2.length; i++) {
+                if (arr1[i].compareArrays) { //likely nested arr2ay
+                    if (!arr1[i].compareArrays(arr2[i])) return false;
+                    else continue;
+                }
+                if (arr1[i] != arr2[i]) return false;
+            }
+            return true;
+        }
+        D = [10, 11, 12];
+        E = [10, 11, 12];
+        console.log(compareArrays(D,E));
+        
+    </script>
+</body>
+
+</html>
